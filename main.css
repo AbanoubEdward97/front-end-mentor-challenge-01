@@ -7,7 +7,7 @@ body{
 a{
     text-decoration:none;
 }
-.container{
+header{
   margin:auto;
   background-color:hsl(216, 50%, 16%);
   border-radius:10px;
@@ -37,14 +37,14 @@ a{
     color:white;
     font-weight:bold
 }
-h2{
+h1{
   font-weight:600;
   color:white;
   margin:0;
   padding:10px 0;
   text-align:left;
 }
-h2:hover{
+h1:hover{
     cursor:pointer;
     color:hsl(178, 100%, 50%)
 }
@@ -65,7 +65,7 @@ p{
 .pricing .span1{
   color:hsl(178, 100%, 50%);
 }
-.attribution{
+footer{
   text-align:center;
 
 }
@@ -101,10 +101,10 @@ img[alt="avatar"]{
 .creation #creation{
   color:hsl(215, 51%, 70%)
 }
-.attribution{
+footer{
   color:hsl(215, 51%, 70%);
   padding:10px 0
 }
-.attribution a{
+footer a{
   color:hsl(178, 100%, 50%);
 }
