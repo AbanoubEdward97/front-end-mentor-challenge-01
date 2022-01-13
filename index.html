@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+    <style>
+    </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="product">
+        <img src="images/image-equilibrium.jpg" alt="image-equilibrium" id="equillibrium">
+        <div class="overlay" id="overlay">
+          <i class="fas fa-eye" id="view"></i>
+        </div>
+      </div>
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p> 
+      <div class="pricing">
+        <span class="span1"><i class="fab fa-ethereum"></i> 0.041 ETH</span>
+        <span class="span2"><i class="fas fa-clock"></i> 3 days left</span>
+      </div>
+      <hr>
+      <div class="creation">
+        <img src="images/image-avatar.png" alt="avatar" id="avatar">
+        <span><span id="creation">Creation of</span> Jules Wyvern</span>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Abanoub Edward</a>.
+    </div>
+    <script src="all.min.js"></script>
+    <script>
+      let overlay=document.getElementById("overlay")
+      let image=document.getElementById("equillibrium")
+      console.log(view)
+      image.onmouseover=function(){
+        overlay.style.cursor="pointer"
+        overlay.style.zIndex =1
+        overlay.style.opacity=.6
+      }
+      overlay.onmouseleave = function(){
+        overlay.style.zIndex = -1
+      }
+    </script>
+  </body>
+</html>
